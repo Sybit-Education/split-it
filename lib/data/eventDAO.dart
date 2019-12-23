@@ -40,7 +40,7 @@ class EventDAO {
 
   Future<void> delete(int id) async {
     await database.delete(
-      'person',
+      'event',
       where: "id = ?",
       whereArgs: [id],
     );
