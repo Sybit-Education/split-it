@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 
-import 'screens/index/index.dart';
+import 'screens/index/frontPage.dart';
 
 
 void main() async {
