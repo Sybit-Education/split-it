@@ -8,6 +8,7 @@ class PersonDAO {
 
   PersonDAO(Database db) {
     this.database = db;
+    database.execute("CREATE TABLE IF NOT EXISTS person(id INTEGER PRIMARY KEY, name TEXT);");
   }
 
   Future<void> insert(Person person) async {
