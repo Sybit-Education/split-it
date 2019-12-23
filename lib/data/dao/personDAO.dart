@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:split_it/data/person.dart';
+import 'package:split_it/data/models/person.dart';
 import 'package:sqflite/sqflite.dart';
 
 class PersonDAO {
