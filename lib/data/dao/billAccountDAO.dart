@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:split_it/data/bill_account.dart';
+import 'package:split_it/data/models/bill_account.dart';
 import 'package:sqflite/sqflite.dart';
 
 class BillAccountDAO {

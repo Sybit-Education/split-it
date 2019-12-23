@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:split_it/data/event_person.dart';
+import 'package:split_it/data/models/event_person.dart';
 import 'package:sqflite/sqflite.dart';
 
 class EventDAO {
