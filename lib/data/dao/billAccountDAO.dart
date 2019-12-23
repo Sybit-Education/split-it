@@ -25,7 +25,9 @@ class BillAccountDAO {
       return BillAccount(
           id: maps[i]['id'],
           eventId: maps[i]['eventId'],
-          personId: maps[i]['personId']);
+          personId: maps[i]['personId'],
+          description: maps[i]['description'],
+          amount: maps[i]['amount']);
     });
   }
 
