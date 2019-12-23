@@ -12,3 +12,27 @@ Often you ...
 ## Build the project
 
 
+## Data Structures
+
+### Person
+
+* id
+* name (Jon Doe)
+
+### Event
+
+* id
+* name (Club)
+
+### Event_Person
+
+* event_id
+* person_id
+
+### Bill_Account
+
+* id
+* event_id
+* person_id
+* description (Cola)
+* amount      (+10€ / - 4€)
