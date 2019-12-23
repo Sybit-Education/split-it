@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'screens/index/index.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -7,11 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Split it!',
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World'),
-        ),
-      ),
+      home: FrontPage(),
     );
   }
 }
