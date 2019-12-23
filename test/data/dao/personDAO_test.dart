@@ -1,9 +1,9 @@
 
+import 'package:split_it/data/dao/personDAO.dart';
 import 'package:split_it/data/models/person.dart';
 import 'package:test/test.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:split_it/data/personDAO.dart';
 
 void main() async {
   final database = openDatabase(
