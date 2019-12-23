@@ -19,10 +19,10 @@ doc/api/
 *.js_
 *.js.deps
 *.js.map
-/.flutter-plugins
-/.flutter-plugins-dependencies
+.flutter-plugins
+.flutter-plugins-dependencies
 
-/.idea/libraries/
+.idea/libraries/
 .idea/codeStyles/
 
 .idea/vcs.xml
