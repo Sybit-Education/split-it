@@ -22,13 +22,21 @@ void main() async {
     version: 1,
   );
 
-  test('Add Person', () async {
-    final Database db = await database;
+    group('PersonDao', () {
+      test('value should start at 0', () async {
+        final Database db = await database;
 
-    final dao = PersonDAO(db);
+        final dao = PersonDAO(db);
+        expect((await (dao.list())).length, 0);
+      });
+      test('Add Person', () async {
+        final Database db = await database;
 
-    dao.insert(new Person(id: 1, name: "Jon Doe"));
+        final dao = PersonDAO(db);
 
-    expect(dao.list(), 1);
-  });
+        dao.insert(new Person(id: 1, name: "Jon Doe"));
+
+        expect((await (dao.list())).length, 1);
+      });
+    });
 }
