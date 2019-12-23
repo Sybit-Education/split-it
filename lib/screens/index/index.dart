@@ -19,20 +19,26 @@ class FrontPage extends StatelessWidget{
                           Padding(
                             padding: EdgeInsets.all(8.0),
                             child: TextFormField(
-                              initialValue: "Name"
+                              decoration: InputDecoration(
+                              labelText: "Name",
+                              ),
                             ),
                           ),
                           Padding(
                             padding: EdgeInsets.all(8.0),
                             child: TextFormField(
-                              initialValue: "Bill",
+                              decoration: InputDecoration(
+                              labelText: "Bill",
+                              ),
                               keyboardType: TextInputType.number
                             ),
                           ),
                           Padding(
                             padding: EdgeInsets.all(8.0),
                             child: TextFormField(
-                              initialValue: "Payed",
+                             decoration: InputDecoration(
+                              labelText: "Payed",
+                              ),
                               keyboardType: TextInputType.number
                             ),
                           ),
