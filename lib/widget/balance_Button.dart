@@ -8,10 +8,17 @@ class BalanceButton extends StatelessWidget {
 
   @override 
   Widget build(BuildContext context){
-    return new RawMaterialButton(
-      fillColor: Colors.purple,
-      splashColor: Colors.purpleAccent,
-      child: Text("Add"),
+    return new FloatingActionButton(
+      backgroundColor: Colors.purple,
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+        const Icon(
+          Icons.attach_money,
+          color: Colors.white
+        ),
+      ],
+    ),
       onPressed: onPressed,
       shape: const StadiumBorder(),
     );
