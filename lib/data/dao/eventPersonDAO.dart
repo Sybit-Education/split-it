@@ -8,6 +8,7 @@ class EventDAO {
 
   EventDAO(Database db) {
     this.database = db;
+    database.execute("CREATE TABLE IF NOT EXISTS eventPersons(id INTEGER PRIMARY KEY, eventId INTEGER, personId, INTEGER);");
   }
 
   Future<void> insert(EventPerson eventPerson) async {

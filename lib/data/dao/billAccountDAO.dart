@@ -8,6 +8,8 @@ class BillAccountDAO {
 
   BillAccountDAO(Database db) {
     this.database = db;
+    database.execute("CREATE TABLE IF NOT EXISTS billAccount(id INTEGER PRIMARY KEY, eventId INTEGER, personId, INTEGER, description TEXT, amount INT);");
+
   }
 
   Future<void> insert(BillAccount billAccount) async {

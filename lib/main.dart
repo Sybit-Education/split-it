@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:sqflite/sqflite.dart';
+import 'package:path/path.dart';
 
 import 'screens/index/index.dart';
 
-void main() => runApp(MyApp());
+
+void main() async {
+  runApp(MyApp());
+  //connect to db
+  Database database =
+      await openDatabase(join(await getDatabasesPath(), 'split-it.db'));
+}
 
 class MyApp extends StatelessWidget {
   @override
