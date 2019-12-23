@@ -1,14 +1,13 @@
 
-import 'package:flutter_test/flutter_test.dart';
+
 import 'package:split_it/data/dao/personDAO.dart';
 import 'package:split_it/data/models/person.dart';
-import 'package:test/test.dart';
+
+import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
 void main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-
   final database = openDatabase(
     // Set the path to the database. Note: Using the `join` function from the
     // `path` package is best practice to ensure the path is correctly
@@ -24,6 +23,8 @@ void main() async {
     // path to perform database upgrades and downgrades.
     version: 1,
   );
+
+  TestWidgetsFlutterBinding.ensureInitialized();
 
     group('PersonDao', () {
       test('value should start at 0', () async {
